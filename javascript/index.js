@@ -57,9 +57,21 @@ function setResetBtn() {
 // Start/Stop Button
 btnLeftElement.addEventListener('click', () => {
   // ... your code goes here
+  btnLeftElement.classList.toggle("stop");
+  btnLeftElement.classList.toggle("start");
+  if (btnLeftElement.classList.contains("start")){
+    btnLeftElement.textContent="STOP";
+  } else {
+    btnLeftElement.textContent="START";
+  }
 });
 
 // Reset/Split Button
 btnRightElement.addEventListener('click', () => {
   // ... your code goes here
+  btnRightElement.classList.toggle("split");
+  btnRightElement.classList.toggle("reset");
+  if (btnRightElement.classList.contains("start")){
+  btnRightlement.textContent="SPLIT";
+  btnRightElement.classList.toggle("reset", "split")
 });
