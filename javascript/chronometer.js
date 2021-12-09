@@ -20,7 +20,7 @@ class Chronometer {
   getMinutes() {
     // ... your code goes here
     return this.currentTime / 60 | 0;
-    // return Math.floo(this.currentTime / 60);
+    // return Math.floor(this.currentTime / 60);
   }
 
   getSeconds() {
